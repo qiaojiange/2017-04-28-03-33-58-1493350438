@@ -1,8 +1,5 @@
 public class BowlingGame {
 
-
-
-
     public int getBowlingScore(String bowlingCode) throws Exception {
 
         String str[] = bowlingCode.split("\\|\\|");
@@ -24,8 +21,8 @@ public class BowlingGame {
 
         int sum = 0;
         for(int i = 9;i>=0;i--){
-//            printf(frameCount);
-            sum += getScore(frameStrs[i],i,frameCount);
+            int temp =  getScore(frameStrs[i],i,frameCount);
+            sum +=temp;
         }
 
         return sum;
