@@ -1,6 +1,6 @@
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static junit.framework.TestCase.assertEquals;
 
 public class BowlingGameTest {
 
@@ -29,5 +29,7 @@ public class BowlingGameTest {
         assertEquals(new BowlingGame().getBowlingScore(bowlingCode), 167);
 
     }
+
+
 }
 
